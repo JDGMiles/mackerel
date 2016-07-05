@@ -1,6 +1,6 @@
 <!DOCTYPE html><html>
 <head>
-	<title>Text to 3x3</title>
+	<title>&ldquo;Mackerel&rdquo;</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -19,95 +19,110 @@
 		<div class="popup">
 			<br>
 			<a class="close" style="right: 30px;" href="#">&times;</a>
-			<div style="font-family:Georgia; color:white; text-align:center; text-decoration:underline; font-size:50px">Text to 3x3</div>
-			<span style="font-family:Georgia; font-size:40px; color:white; text-align:justify;"><br>Click the text in the box to experiment...<br><br><a href="https://en.wikipedia.org/wiki/3x3">3x3 on Wikipedia</a></span><br><br><br>
+			<div style="font-family:Georgia; color:white; text-align:center; text-decoration:underline; font-size:50px">&ldquo;Mackerel&rdquo;</div>
+			<span style="font-family:Georgia; font-size:30px; color:white; text-align:justify;"><br>This page takes a list of words and tells you which of the list share no letters with another, specific, word.<br><br>The classic example is St John&rsquo;s Wood being the only London underground station to contain no letters of the word &ldquo;Mackerel&rdquo;.<br><br>You can put in your own lists and words in the top two boxes to find new ones!<br><br>
 		</div>
 	</div>
 
-	<div style="width:1070px"><table style="padding:0px 80px 0px 80px;" id="tablecontents">
-	</table>
-	<br>
-	<table><tr>
-		<td><textarea id="inputfield" class="inputbox" type="text" onblur="if(this.value==''){this.value='This is a tool to show how  continuous text would look  in Anders de Flon&rsquo;s &ldquo;3x3&rdquo;   typeface. Write text into   the bottom box and it is    displayed above.'}" onfocus="if(this.value=='This is a tool to show how  continuous text would look  in Anders de Flon&rsquo;s &ldquo;3x3&rdquo;   typeface. Write text into   the bottom box and it is    displayed above.'){this.value='';}">This is a tool to show how  continuous text would look  in Anders de Flon&rsquo;s &ldquo;3x3&rdquo;   typeface. Write text into   the bottom box and it is    displayed above.</textarea></td></tr></table>
+	<div style="width:1070px">
+		<table><tr>
+			<td><textarea id="stations" class="stationsbox" type="text" onblur="if(this.value==''){this.value=originalinput;}" onfocus="if(this.value==originalinput){this.value='';}">Acton Town, Aldgate East, Aldgate, Alperton, Amersham, Angel, Archway, Arnos Grove, Arsenal, Baker Street, Balham Underground, Bank/Monument Complex, Barbican, Barking, Barkingside, Barons Court, Bayswater, Becontree, Belsize Park, Bermondsey, Bethnal Green Underground, Blackfriars Underground, Blackhorse Road Underground, Bond Street, Borough, Boston Manor, Bounds Green, Bow Road, Brent Cross, Brixton Underground, Bromley-by-Bow, Buckhurst Hill, Burnt Oak, Caledonian Road Underground, Camden Town, Canada Water, Canary Wharf, Canning Town, Cannon Street Underground, Canons Park, Chalfont & Latimer, Chalk Farm, Chancery Lane, Charing Cross Underground, Chesham, Chigwell, Chiswick Park, Chorleywood, Clapham Common, Clapham North, Clapham South, Cockfosters, Colindale, Colliers Wood, Covent Garden, Croxley, Dagenham East, Dagenham Heathway, Debden, Dollis Hill, Ealing Broadway, Ealing Common, Earl&#39;s Court, East Acton, East Finchley, East Ham, East Putney, Eastcote, Edgware Road, Edgware Road, Edgware, Elephant & Castle Underground, Elm Park, Embankment, Epping, Euston Square, Euston Underground, Fairlop, Farringdon, Finchley Central, Finchley Road Underground, Finsbury Park Underground, Fulham Broadway, Gants Hill, Gloucester Road, Golders Green, Goldhawk Road, Goodge Street, Grange Hill, Great Portland Street, Green Park, Greenford, Gunnersbury, Hainault, Hammersmith, Hammersmith, Hampstead, Hanger Lane, Harlesden, Harrow & Wealdstone, Harrow-on-the-Hill, Hatton Cross, Heathrow T123, Heathrow T4, Heathrow T5, Hendon Central, High Barnet, High Street Kensington, Highbury & Islington Underground, Highgate, Hillingdon, Holborn, Holland Park, Holloway Road, Hornchurch, Hounslow Central, Hounslow East, Hounslow West, Hyde Park Corner, Ickenham, Kennington, Kensal Green, Kensington (Olympia), Kentish Town Underground, Kenton, Kew Gardens, Kilburn Park, Kilburn, King&#39;s Cross/St Pancras Underground, Kingsbury, Knightsbridge, Ladbroke Grove, Lambeth North, Lancaster Gate, Latimer Road, Leicester Square, Leyton Underground, Leytonstone, Liverpool Street, London Bridge Underground, Loughton, Maida Vale, Manor House, Mansion House, Marble Arch, Marylebone Underground, Mile End, Mill Hill East, Moor Park, Moorgate, Morden Underground, Mornington Crescent, Neasden, New Cross Gate, New Cross, Newbury Park, North Acton, North Ealing, North Greenwich, North Harrow, North Wembley, Northfields, Northolt Underground, Northwick Park, Northwood Hills, Northwood, Notting Hill Gate, Oakwood, Old Street, Osterley, Oval, Oxford Circus, Paddington, Paddington, Park Royal, Parsons Green, Perivale, Piccadilly Circus, Pimlico, Pinner, Plaistow, Preston Road, Putney Bridge, Queen&#39;s Park, Queensbury, Queensway, Ravenscourt Park, Rayners Lane, Redbridge, Regent&#39;s Park, Richmond, Rickmansworth, Roding Valley, Rotherhithe, Royal Oak, Ruislip Gardens, Ruislip Manor, Ruislip, Russell Square, Seven Sisters Underground, Shadwell, Shepherd&#39;s Bush, Shepherd&#39;s Bush Market, Sloane Square, Snaresbrook, South Ealing, South Harrow, South Kensington, South Kenton, South Ruislip, South Wimbledon, South Woodford, Southfields, Southgate, Southwark, St James&#39;s Park, St John&#39;s Wood, St Paul&#39;s, Stamford Brook, Stanmore, Stepney Green, Stockwell, Stonebridge Park, Stratford, Sudbury Hill Underground, Sudbury Town, Surrey Quays, Swiss Cottage, Temple, Theydon Bois, Tooting Bec, Tooting Broadway, Tottenham Court Road, Tottenham Hale Underground, Totteridge & Whetstone, Tower Hill, Tufnell Park, Turnham Green, Turnpike Lane, Upminster Bridge, Upminster, Upney, Upton Park, Uxbridge, Vauxhall Underground, Victoria Underground, Walthamstow Central, Wanstead Underground, Wapping, Warren Street, Warwick Avenue, Waterloo Underground, Watford, Wembley Central, Wembley Park, West Acton, West Brompton, West Finchley, West Ham Underground, West Hampstead Underground, West Harrow, West Kensington, West Ruislip, Westbourne Park, Westminster, White City, Whitechapel, Willesden Green, Willesden Junction, Wimbledon Park, Wimbledon, Wood Green, Wood Lane, Woodford, Woodside Park</textarea></td>
+		</tr></table>
+		<table><tr>
+			<td><textarea id="mackerel" class="mackerelbox" type="text" onblur="if(this.value==''){this.value=originalinput2;}" onfocus="if(this.value==originalinput2){this.value='';}">Mackerel</textarea></td>
+		</tr></table>
+		<br>
+		<table><tr>
+			<td><div class="outputbox" id="results" style="vertical-align:top; padding:10px;10px;10px;10px;" contenteditable="true">Results</div></td>
+		</tr></table>
+		<br><br>
+		<table><tr>
+			<td style="background-color:white; width:710px; height:2px;"></td>
+		</tr></table>
+		<br>
+		<table><tr>
+			<td><button class="examplebutton" onclick="example(1)">Dwarves</button></td>
+			<td><button class="examplebutton" onclick="example(2)">G1 Pokemon</button></td>
+			<td><button class="examplebutton" onclick="example(3)">US States</button></td>
+			<td><button class="examplebutton" onclick="example(4)">Elements</button></td>
+			<td><button class="examplebutton" onclick="example(5)">Tube Stations</button></td>
+		</tr></table>
 </div>
 
 </center></body>
 </html>
 
 <script type="text/javascript">
-var tablecolumns=28*4+1;
-var tablerows=6*4+1;
-var tablecontentsmarkup=" ";
-var maxwidth=900;
-var maxheight=900;
-var cellsize=Math.min(Math.floor(maxwidth/tablecolumns), Math.floor(maxheight/tablerows));
-var cellstate=[];
-for(var i=0; i<tablecolumns*tablerows; i++){cellstate[i]=0;}
-for(var i=0; i<tablerows; i++){
-	tablecontentsmarkup=tablecontentsmarkup+"<tr>";
-	for(var j=0; j<tablecolumns; j++){
-		tablecontentsmarkup=tablecontentsmarkup+"<td class=\"gridcell\" id=\""+(i*tablecolumns+j)+"\" style=\"width:"+cellsize+"px; height:"+cellsize+"px;\"></td>";
-	}
-	tablecontentsmarkup=tablecontentsmarkup+"</tr>";
-}
 
-document.getElementById("tablecontents").innerHTML=tablecontentsmarkup;
+var originalinput=document.getElementById("stations").value;
+var originalinput2=document.getElementById("mackerel").value;
+var stations;
+var station=[];
+var mackerel;
+var stillvalid=[];
+var output;
+var notlonely=0;
 
-var raw;
+function calculate(){
 
-var typefacedata="111101111110010111110010011111011111101111001011010110100111111111001001011111111111111001010111101110111111111100111110101110111110111111110100110101111101111101111010111001101111101110101100100111111111101111101101111101111111111100111111001111100100011010110111010010101101111101101010101111111101010101101010010110010011000000100010010000101101000011110011010010010110011110011010011100010001110010110111000111010000010010000110011100011110001110001010100000111000000010110010111010001010001010001010111001010";
+	stations=document.getElementById("stations").value;
+	station=stations.split(', ');
+	mackerel=document.getElementById("mackerel").value;
 
-var startingcell;
-
-function paint(){
-	clear();
-	raw=document.getElementById("inputfield").value;
-	for(var i=0; i<Math.min(raw.length, (((tablecolumns-1)*(tablerows-1))/16)); i++){
-		if(raw.charCodeAt(i)>64 && raw.charCodeAt(i)<91){letterpaint(i, raw.charCodeAt(i)-55);}
-		if(raw.charCodeAt(i)>96 && raw.charCodeAt(i)<123){letterpaint(i, raw.charCodeAt(i)-87);}
-		if(raw.charCodeAt(i)>47 && raw.charCodeAt(i)<58){letterpaint(i, raw.charCodeAt(i)-48);}
-		if(raw.charCodeAt(i)==32){document.getElementById(i).innerHTML="";}
-		if(raw.charCodeAt(i)==46){letterpaint(i, 36);}
-		if(raw.charCodeAt(i)==39 || raw.charCodeAt(i)==8216 || raw.charCodeAt(i)==8217){letterpaint(i, 37);}
-		if(raw.charCodeAt(i)==34 || raw.charCodeAt(i)==8220 || raw.charCodeAt(i)==8221){letterpaint(i, 38);}
-		if(raw.charCodeAt(i)==123){letterpaint(i, 39);}
-		if(raw.charCodeAt(i)==124){letterpaint(i, 40);}
-		if(raw.charCodeAt(i)==125){letterpaint(i, 41);}
-		if(raw.charCodeAt(i)==91){letterpaint(i, 42);}
-		if(raw.charCodeAt(i)==92){letterpaint(i, 43);}
-		if(raw.charCodeAt(i)==93){letterpaint(i, 44);}
-		if(raw.charCodeAt(i)==61){letterpaint(i, 45);}
-		if(raw.charCodeAt(i)==58){letterpaint(i, 46);}
-		if(raw.charCodeAt(i)==59){letterpaint(i, 47);}
-		if(raw.charCodeAt(i)==40){letterpaint(i, 48);}
-		if(raw.charCodeAt(i)==41){letterpaint(i, 49);}
-		if(raw.charCodeAt(i)==47){letterpaint(i, 50);}
-		if(raw.charCodeAt(i)==45){letterpaint(i, 51);}
-		if(raw.charCodeAt(i)==44){letterpaint(i, 52);}
-		if(raw.charCodeAt(i)==43){letterpaint(i, 53);}
-		if(raw.charCodeAt(i)==60){letterpaint(i, 54);}
-		if(raw.charCodeAt(i)==62){letterpaint(i, 55);}
-		if(raw.charCodeAt(i)==63){letterpaint(i, 56);}
-	}
-	setTimeout(paint, 100);
-}
-
-function letterpaint(letternumber, letter){
-	startingcell= 1+tablecolumns + 4*(letternumber%((tablecolumns-1)/4)) + 4*tablecolumns*(Math.floor(letternumber/((tablecolumns-1)/4)));
-	for(var i=0; i<3; i++){
-		for(var j=0; j<3; j++){
-			if(typefacedata[9*letter+i+3*j]=="1"){document.getElementById(startingcell+i+tablecolumns*j).style.backgroundColor="white";}
-			else{document.getElementById(startingcell+i+tablecolumns*j).style.backgroundColor="black";}
+	for(i=0; i<station.length; i++){stillvalid[i]=1;}
+	for(i=0; i<station.length; i++){
+		for(j=0; j<mackerel.length; j++){
+			for(k=0; k<station[i].length; k++){
+				if(mackerel[j].toLowerCase()==station[i][k].toLowerCase() && mackerel[j]!=' '){stillvalid[i]=0; k=station[i].length; j=mackerel.length;}
+			}
 		}
 	}
-}
 
-function clear(){
-	for(var i=0; i<tablecolumns*tablerows; i++){
-		document.getElementById(i).style.backgroundColor="black";
+	output='';
+	notlonely=0;
+
+	for(i=0; i<station.length; i++){
+		if(stillvalid[i]){
+			if(notlonely){output=output+', ';}
+			output=output+station[i]; notlonely=1;
+		}
 	}
+
+	document.getElementById("results").innerHTML=output;
+
+	setTimeout(calculate, 100);
+
 }
 
-paint();
+function resettextarea(){
+	document.getElementById("stations").value=originalinput;
+}
+
+function example(n){
+	if(n==1){
+		document.getElementById("stations").value="Doc, Dopey, Grumpy, Happy, Bashful, Sleepy, Sneezy";
+		document.getElementById("mackerel").value="Snow White";
+	}
+	if(n==2){
+		document.getElementById("stations").value="Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Caterpie, Metapod, Butterfree, Weedle, Kakuna, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Grimer, Muk, Shellder, Cloyster, Gastly, Haunter, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Voltorb, Electrode, Exeggcute, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Magikarp, Gyarados, Lapras, Ditto, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew";
+		document.getElementById("mackerel").value="Professor Oak";
+	}
+	if(n==3){
+		document.getElementById("stations").value="Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, Wyoming";
+		document.getElementById("mackerel").value="George W Bush";
+	}
+	if(n==4){
+		document.getElementById("stations").value="Hydrogen, Helium, Lithium, Beryllium, Boron, Carbon, Nitrogen, Oxygen, Fluorine, Neon, Sodium, Magnesium, Aluminium, Silicon, Phosphorus, Sulfur, Chlorine, Argon, Potassium, Calcium, Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt, Nickel, Copper, Zinc, Gallium, Germanium, Arsenic, Selenium, Bromine, Krypton, Rubidium, Strontium, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium, Palladium, Silver, Cadmium, Indium, Tin, Antimony, Tellurium, Iodine, Xenon, Caesium, Barium, Lanthanum, Cerium, Praseodymium, Neodymium, Promethium, Samarium, Europium, Gadolinium, Terbium, Dysprosium, Holmium, Erbium, Thulium, Ytterbium, Lutetium, Hafnium, Tantalum, Tungsten, Rhenium, Osmium, Iridium, Platinum, Gold, Mercury, Thallium, Lead, Bismuth, Polonium, Astatine, Radon, Francium, Radium, Actinium, Thorium, Protactinium, Uranium, Neptunium, Plutonium, Americium, Curium, Berkelium, Californium, Einsteinium, Fermium, Mendelevium, Nobelium, Lawrencium, Rutherfordium, Dubnium, Seaborgium, Bohrium, Hassium, Meitnerium, Darmstadtium, Roentgenium, Copernicium, Ununtrium, Flerovium, Ununpentium, Livermorium, Ununseptium, Ununoctium";
+		document.getElementById("mackerel").value="Einstein";
+	}
+	if(n==5){
+		document.getElementById("stations").value="Acton Town, Aldgate East, Aldgate, Alperton, Amersham, Angel, Archway, Arnos Grove, Arsenal, Baker Street, Balham Underground, Bank/Monument Complex, Barbican, Barking, Barkingside, Barons Court, Bayswater, Becontree, Belsize Park, Bermondsey, Bethnal Green Underground, Blackfriars Underground, Blackhorse Road Underground, Bond Street, Borough, Boston Manor, Bounds Green, Bow Road, Brent Cross, Brixton Underground, Bromley-by-Bow, Buckhurst Hill, Burnt Oak, Caledonian Road Underground, Camden Town, Canada Water, Canary Wharf, Canning Town, Cannon Street Underground, Canons Park, Chalfont & Latimer, Chalk Farm, Chancery Lane, Charing Cross Underground, Chesham, Chigwell, Chiswick Park, Chorleywood, Clapham Common, Clapham North, Clapham South, Cockfosters, Colindale, Colliers Wood, Covent Garden, Croxley, Dagenham East, Dagenham Heathway, Debden, Dollis Hill, Ealing Broadway, Ealing Common, Earl's Court, East Acton, East Finchley, East Ham, East Putney, Eastcote, Edgware Road, Edgware Road, Edgware, Elephant & Castle Underground, Elm Park, Embankment, Epping, Euston Square, Euston Underground, Fairlop, Farringdon, Finchley Central, Finchley Road Underground, Finsbury Park Underground, Fulham Broadway, Gants Hill, Gloucester Road, Golders Green, Goldhawk Road, Goodge Street, Grange Hill, Great Portland Street, Green Park, Greenford, Gunnersbury, Hainault, Hammersmith, Hammersmith, Hampstead, Hanger Lane, Harlesden, Harrow & Wealdstone, Harrow-on-the-Hill, Hatton Cross, Heathrow T123, Heathrow T4, Heathrow T5, Hendon Central, High Barnet, High Street Kensington, Highbury & Islington Underground, Highgate, Hillingdon, Holborn, Holland Park, Holloway Road, Hornchurch, Hounslow Central, Hounslow East, Hounslow West, Hyde Park Corner, Ickenham, Kennington, Kensal Green, Kensington (Olympia), Kentish Town Underground, Kenton, Kew Gardens, Kilburn Park, Kilburn, King's Cross/St Pancras Underground, Kingsbury, Knightsbridge, Ladbroke Grove, Lambeth North, Lancaster Gate, Latimer Road, Leicester Square, Leyton Underground, Leytonstone, Liverpool Street, London Bridge Underground, Loughton, Maida Vale, Manor House, Mansion House, Marble Arch, Marylebone Underground, Mile End, Mill Hill East, Moor Park, Moorgate, Morden Underground, Mornington Crescent, Neasden, New Cross Gate, New Cross, Newbury Park, North Acton, North Ealing, North Greenwich, North Harrow, North Wembley, Northfields, Northolt Underground, Northwick Park, Northwood Hills, Northwood, Notting Hill Gate, Oakwood, Old Street, Osterley, Oval, Oxford Circus, Paddington, Paddington, Park Royal, Parsons Green, Perivale, Piccadilly Circus, Pimlico, Pinner, Plaistow, Preston Road, Putney Bridge, Queen's Park, Queensbury, Queensway, Ravenscourt Park, Rayners Lane, Redbridge, Regent's Park, Richmond, Rickmansworth, Roding Valley, Rotherhithe, Royal Oak, Ruislip Gardens, Ruislip Manor, Ruislip, Russell Square, Seven Sisters Underground, Shadwell, Shepherd's Bush, Shepherd's Bush Market, Sloane Square, Snaresbrook, South Ealing, South Harrow, South Kensington, South Kenton, South Ruislip, South Wimbledon, South Woodford, Southfields, Southgate, Southwark, St James's Park, St John's Wood, St Paul's, Stamford Brook, Stanmore, Stepney Green, Stockwell, Stonebridge Park, Stratford, Sudbury Hill Underground, Sudbury Town, Surrey Quays, Swiss Cottage, Temple, Theydon Bois, Tooting Bec, Tooting Broadway, Tottenham Court Road, Tottenham Hale Underground, Totteridge & Whetstone, Tower Hill, Tufnell Park, Turnham Green, Turnpike Lane, Upminster Bridge, Upminster, Upney, Upton Park, Uxbridge, Vauxhall Underground, Victoria Underground, Walthamstow Central, Wanstead Underground, Wapping, Warren Street, Warwick Avenue, Waterloo Underground, Watford, Wembley Central, Wembley Park, West Acton, West Brompton, West Finchley, West Ham Underground, West Hampstead Underground, West Harrow, West Kensington, West Ruislip, Westbourne Park, Westminster, White City, Whitechapel, Willesden Green, Willesden Junction, Wimbledon Park, Wimbledon, Wood Green, Wood Lane, Woodford, Woodside Park";
+		document.getElementById("mackerel").value="Mackerel";
+	}
+	originalinput=document.getElementById("stations").value;
+	originalinput2=document.getElementById("mackerel").value;
+}
+
+calculate();
 
 </script>

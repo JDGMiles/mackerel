@@ -8,7 +8,10 @@ a:link {color:#CF0000; text-decoration: none;}
 a:link:hover {text-decoration:underline}
 a:visited {color:#CF0000;}
 
-.inputbox {width:700px; height:385px; font-size:55px; font-family:georgia; color:white; background-color:black; text-align:center;}
+.stationsbox {width:700px; height:250px; font-size:50px; font-family:georgia; color:white; background-color:black; text-align:center;}
+.mackerelbox {width:700px; height:67px; font-size:50px; font-family:georgia; color:white; background-color:black; text-align:center;}
+.outputbox {width:680px; height:67px; overflow:auto; border-style:solid; border-color:white; font-size:50px; font-family:georgia; color:white; background-color:black; text-align:center;}
+.examplebutton {font-size:26px; font-family:georgia; color:white; background-color:black; text-align:center;}
 
 .overlay {
   position: fixed;
@@ -28,12 +31,14 @@ a:visited {color:#CF0000;}
 }
 
 .popup {
-  margin: 70px auto;
+  margin: 40px auto;
   padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
   background: #181818;
   border:2px solid #AAAAAA;
   border-radius: 20px;
-  width: 400px;
+  width: 600px;
   position: relative;
   transition: all 0s ease-in-out;
 }
